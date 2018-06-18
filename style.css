@@ -1,145 +1,83 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Tajawal', sans-serif;
     line-height: 1.5;
     color: #0B0B46;
     margin: 0;
     box-sizing: border-box;
     margin-bottom: 100px;
+    background-color: #d5f7f3;
 }
 
-.hero {
-    text-align: center;
 
-    background-color: #0B0B46;
-}
-
-.hero__video-container {
-    position: relative;
-}
-
-.hero__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    z-index: 2;
-}
-
-.hero__video {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-    height: 0;
-    line-height: 0;
-}
-.hero__video iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.hero__image-replacement{
-    width: 100%;
-    height: auto;
-}
-
-.hero__business-card svg {
-    display: block;
-    margin-bottom: 30px;
-    margin:auto;
-    padding: 6px 6px 0 6px;
-}
-
-.hero__business-card {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.hero__email-link {
-    display: block;
-    flex:1 100%;
-    padding: 10px;
-    font-size: 22px;
-    color: #0B0B46;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.link-tiles__tile {
-    text-align: center;
-}
-
-.link-tiles__tile a {
-    text-decoration: none;
-}
-
-.link-tiles__tile img {
+.img-responsive {
     max-width: 100%;
     height: auto;
 }
 
-.link-tiles__overlay{
-    position: absolute;
-    left: 20%;
-    right: 20%;
-    top: 20%;
-    bottom: 20%;
+
+.topnav {
+    padding: 15px;
+}
+
+.topnav__logo {
     max-width: 300px;
-    margin: auto;
-    max-height: 200px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
+    height: auto;
 }
 
-.link-tiles__tile p {
-    font-size: 18px;
-    font-weight: 200;
-    color: #0B0B46;
+.topnav__email-link {
+    float: right;
+    padding: 25px 0;
+    font-size: 1.5em;
+    color: #c40000;
+    text-decoration: none;
+}
+
+
+.img-section {
+    margin: 50px 0;
+}
+
+.img-section--first {
+    margin: 0;
+}
+
+
+.projects__title, .showreel__title {
     text-align: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.25);
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding:10px;
-    margin: 0 0 4% 0;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
-.link-tiles__logo {
-    position: relative;
-    top: 30%;
-}
-
-
-.about-me {
+.projects__project{
     text-align: center;
-    margin: 40px auto;
+
+}
+
+.projects__image {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contact {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 200px auto;
+}
+
+.contact__email-link {
+    color: #c40000;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.back-to-projects {
+    text-align: center;
+}
+
+@media (max-width:719px) {
+    .contact {
+        margin: 30px auto 70px;
+        font-size: 1.5rem;
+    }
 }
